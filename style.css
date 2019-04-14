@@ -16,7 +16,7 @@ hr {
     width: 100%;
     height: 1px;
     border: 0;
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
     margin: 40px 0;
     }
 
@@ -91,7 +91,7 @@ hr {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #fff22b;
+    background-color: #FFF22B;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -112,7 +112,7 @@ hr {
 .btn { display: inline-block;
     vertical-align: top;
     padding: 8px 30px;
-    border: 3px solid #fff;
+    border: 3px solid #FFF;
     font-size: 14px;
     font-weight: 700;
     color: white;
@@ -121,7 +121,7 @@ hr {
     transition: background .1s linear, color .1s linear; }
 
 .btn:hover { background-color: white;
-    color: #333333; }
+    color: #333; }
 
 .slider { position: absolute;
     width: 100%;
@@ -137,7 +137,7 @@ hr {
 .slider__item { width: 23%;
     padding: 20px 0;
     position: relative;
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid #FFF;
     opacity: .7;
     font-size: 18px;
     color: white;
@@ -156,7 +156,7 @@ hr {
     top: -3px;
     left: 0;
     z-index: 1;
-    background-color: #ff231c;
+    background-color: #FF231C;
     }
 
 .slider__num { font-size: 24px;
@@ -175,18 +175,18 @@ hr {
     }
 
 .section--clients {
-    background: #f5f5f5 url("./images/clients-bg.jpg") center no-repeat;
+    background: #F5F5F5 url("./images/clients-bg.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     }
 
 .section--gray {
-    background-color: #81b3cc;
+    background-color: #81B3CC;
     }
 
 .section__map {
     padding: 40px 0;
-    background: #cccccc url("./images/map-bg.jpg") center no-repeat / cover;
+    background: #CCC url("./images/map-bg.jpg") center no-repeat / cover;
     }
 
 .section__header {
@@ -199,13 +199,13 @@ hr {
 .section__suptitle {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
-    color: #333333;
+    color: #333;
     }
 
 .section__title {
     font-size: 30px;
     font-weight: 700;
-    color: #333333;
+    color: #333;
     text-transform: uppercase;
     }
 
@@ -215,12 +215,12 @@ hr {
     width: 60px;
     height: 3px;
     margin: 30px auto;
-    background-color: #ff231c;
+    background-color: #FF231C;
     }
 
 .section__text {
     font-size: 15px;
-    color: #999999;
+    color: #999;
     }
 
 .card {
@@ -234,7 +234,7 @@ hr {
     }
 
 .card__inner {
-    background-color: #51ffd8;
+    background-color: #51FFD8;
     position: relative;
     }
 
@@ -251,7 +251,7 @@ hr {
     }
 
 .card__img {
-    background: linear-gradient(to bottom, #f38181, #fce38a);
+    background: linear-gradient(to bottom, #F38181, #FCE38A);
     transition: transform .2s linear;
     }
 
@@ -283,20 +283,20 @@ hr {
 
 .card__name {
     text-transform: uppercase;
-    color: #333333;
+    color: #333;
     font-size: 14px;
     margin-bottom: 5px;
     }
 
 .card__prof {
-    color: #999999;
+    color: #999;
     font-size: 15px;
     font-style: italic;
     font-weight: 300;
     }
 
 .statistics {
-    background-color: #51ffd8;
+    background-color: #51FFD8;
     }
 
 .stat {
@@ -305,14 +305,14 @@ hr {
 
 .stat__item {
     flex: 1 1 0;
-    border-left: 1px solid #b3fffc;
+    border-left: 1px solid #B3FFFC;
     padding: 70px 25px;
     text-align: center;
     color: white;
     }
 
 .stat__item:last-child {
-    border-right: 1px solid #b3fffc;
+    border-right: 1px solid #B3FFFC;
     }
 
 .stat__count {
@@ -348,13 +348,13 @@ hr {
 .services__title {
     margin-bottom: 10px;
     font-size: 14px;
-    color: #333333;
+    color: #333;
     text-transform: uppercase;
     }
 
 .services__text {
     font-size: 15px;
-    color: #999999;
+    color: #999;
     }
 
 .devices {
@@ -384,7 +384,7 @@ hr {
     }
 
 .accordion__item {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #E5E5E5;
     margin-bottom: 10px;
     }
 
@@ -393,7 +393,7 @@ hr {
     }
 
 .accordion__item.active .accordion__header {
-    border-bottom-color: #e5e5e5;
+    border-bottom-color: #E5E5E5;
     }
 
 .accordion__item.active .accordion__header:after {
@@ -413,8 +413,8 @@ hr {
     display: block;
     width: 16px;
     height: 16px;
-    border-top: 2px solid #cccccc;
-    border-right: 2px solid #cccccc;
+    border-top: 2px solid #CCC;
+    border-right: 2px solid #CCC;
     position: absolute;
     top: 50%;
     right: 20px;
@@ -433,7 +433,7 @@ hr {
 .accordion__content {
     padding: 15px 20px;
     font-size: 15px;
-    color: #999999;
+    color: #999;
     font-style: italic;
     font-weight: 300;
     display: none;
@@ -441,7 +441,7 @@ hr {
 
 .accordion__title {
     font-size: 14px;
-    color: #333333;
+    color: #333;
     text-transform: uppercase;
     }
 
@@ -456,7 +456,7 @@ hr {
     }
 
 .reviews__photo {
-    border: 2px solid #51ffd8;
+    border: 2px solid #51FFD8;
     position: absolute;
     top: 0;
     left: 0;
@@ -469,12 +469,12 @@ hr {
     font-size: 24px;
     font-style: italic;
     font-weight: 300;
-    color: #999999;
+    color: #999;
     }
 
 .reviews__author {
     font-size: 24px;
-    color: #333333;
+    color: #333;
     font-family: 'Kaushan Script', cursive;
     }
 
@@ -484,7 +484,7 @@ hr {
     vertical-align: middle;
     width: 60px;
     height: 3px;
-    background-color: #ff231c;
+    background-color: #FF231C;
     margin-right: 10px;
     }
 
@@ -502,8 +502,8 @@ hr {
     display: block;
     width: 16px;
     height: 16px;
-    border-top: 2px solid #cccccc;
-    border-left: 2px solid #cccccc;
+    border-top: 2px solid #CCC;
+    border-left: 2px solid #CCC;
     }
 
 .reviews__btn--prev {
@@ -526,9 +526,9 @@ hr {
     height: 55px;
     padding: 12px 10px;
     background-color: yellow;
-    border-right: 1px solid #f38181;
+    border-right: 1px solid #F38181;
     text-decoration: none;
-    color: #f38181;
+    color: #F38181;
     font-size: 30px;
     line-height: 1;
     transition: background .1s linear, color .1s linear;
@@ -559,7 +559,7 @@ hr {
 
 .works__item {
     position: relative;
-    background: linear-gradient(to bottom, #f38181, #fce38a);
+    background: linear-gradient(to bottom, #F38181, #FCE38A);
     }
 
 .works__item:hover .works__image { opacity: .1; }
@@ -624,21 +624,21 @@ hr {
 
 .clients__name {
     margin-bottom: 5px;
-    color: #333333;
+    color: #333;
     text-transform: uppercase;
     font-size: 14px;
     }
 
 .clients__prof {
     font-size: 15px;
-    color: #333333;
+    color: #333;
     font-style: italic;
     font-weight: 300;
     }
 
 .clients__text {
     font-size: 15px;
-    color: #999999;
+    color: #999;
     }
 
 .clients__text:before {
@@ -646,7 +646,7 @@ hr {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #cc2a2d;
+    background-color: #CC2A2D;
     margin: 15px 0;
     }
 
@@ -678,7 +678,7 @@ hr {
     z-index: 1;
     font-weight: 300;
     text-align: center;
-    background-color: #51ffd8;
+    background-color: #51FFD8;
     color: white;
     font-size: 15px;
     font-style: italic;
@@ -697,7 +697,7 @@ hr {
 
 .blog__title {
     font-size: 14px;
-    color: #333333;
+    color: #333;
     text-transform: uppercase;
     margin-bottom: 10px;
     }
@@ -713,16 +713,16 @@ hr {
 
 .blog__text {
     font-size: 15px;
-    color: #999999;
+    color: #999;
     }
 
 .blog__footer {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #E5E5E5;
     padding-top: 14px;
     font-size: 15px;
     font-weight: 300;
     font-style: italic;
-    color: #999999;
+    color: #999;
     }
 
 .blog-stat__item {
@@ -732,7 +732,7 @@ hr {
     }
 
 .blog-stat__item i {
-    color: #51ffd8;
+    color: #51FFD8;
     }
 
 .map {
@@ -742,7 +742,7 @@ hr {
 .map__title {
     font-size: 24px;
     font-weight: 700;
-    color: #f38181;
+    color: #F38181;
     text-transform: uppercase;
     }
 
@@ -761,5 +761,192 @@ hr {
     width: 60px;
     height: 3px;
     margin: 15px auto 0;
-    background-color: #ff231c;
+    background-color: #FF231C;
+    }
+
+.footer {
+    padding-top: 65px;
+    background-color: #CECECE;
+    }
+
+.footer__inner {
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.footer__col--first {
+    width: 40%;
+    }
+
+.footer__col--second {
+    width: 29%;
+    }
+
+.footer__col--third {
+    width: 22%;
+    }
+
+.footer__logo {
+    font-size: 46px;
+    font-weight: 700;
+    color: #515151;
+    margin-bottom: 30px;
+    }
+
+.footer__text {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 30px;
+    }
+
+.footer__social {
+    margin-bottom: 25px;
+    }
+
+.footer_social-header {
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 15px;
+    }
+
+.footer_social-header b {
+    font-size: 18px;
+    }
+
+.footer_social-content {
+    padding-top: 15px;
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+    font-weight: 300;
+    }
+
+.footer_social-content a {
+    color: #419662;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    }
+
+.footer__title {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    margin: 30px 0;
+    }
+
+.subscribe {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    }
+
+.subscribe__input {
+    width: 60%;
+    height: 40px;
+    background: #FFF;
+    border: 1px solid #E7E7E7;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    color: #333;
+    border-right: 0;
+    }
+
+.subscribe__input::placeholder {
+    color: #CCC;
+    }
+
+.subscribe__input:focus { /*убрать рамку при наведении*/
+    outline: 0;
+    border-color: #419662; /*добавить рамку цвета кнопки*/
+    }
+
+.subscribe__btn {
+    width: 40%;
+    height: 40px;
+    background-color: #419662;
+    padding: 12px 30px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    transition: background 0.2s linear;
+    line-height: 1.1;
+    }
+
+.subscribe__btn:hover {
+    background-color: #34693F;
+    }
+
+.blogs__item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center; /*выровнять текст по центру */
+    }
+
+.blogs__img {
+    width: 120px;
+    height: 80px;
+    }
+
+.blogs__content {
+    padding-left: 20px;
+    }
+
+.blogs__title {
+    display: block;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    }
+
+.blogs__title:hover {
+    text-decoration: underline;
+    }
+
+.blogs__date {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    color: #858585;
+    }
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.instagram__item {
+    width: 32.33%;
+    border-bottom: 1px solid #FFF;
+    }
+
+.instagram__item img {
+    display: block;
+    }
+
+.copyright {
+    padding: 20px 0;
+    border-top: 1px solid #515151;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    }
+
+.copyright span {
+    color: #CC2A2D;
     }
