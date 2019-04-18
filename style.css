@@ -20,8 +20,10 @@ hr {
     margin: 40px 0;
     }
 
-.container { width: 100%;
-    max-width: 1200px;
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto; }
 
 .intro { display: flex;
@@ -224,13 +226,15 @@ hr {
     }
 
 .card {
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display: flex;
+    flex-wrap: wrap; /*разрешается перенос элементов друг под друга*/
     justify-content: space-between;
     }
 
 .card__item {
-    width: 380px;
+    width: 33.3333%;
+    padding: 0 15px;
     }
 
 .card__inner {
@@ -257,6 +261,8 @@ hr {
 
 .card__img img {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .1s linear;
     }
 
@@ -301,6 +307,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
     }
 
 .stat__item {
@@ -329,13 +336,18 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     }
 
 .services__item {
-    flex: 1 1 0;
-    padding-left: 85px;
-    padding-right: 35px;
+    width: 33.3333%;
+    padding: 0 35px 40px 85px;
     position: relative;
+    margin-bottom: 40px;
+    }
+
+.services__item--border {
+    border-bottom: 1px solid #E5E5E5;
     }
 
 .services__icon {
@@ -366,6 +378,8 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
     }
 
 .devices__item--iphone {
@@ -377,10 +391,19 @@ hr {
 
 .wedo {
     display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
     }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
+    }
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     }
 
 .accordion__item {
@@ -949,4 +972,165 @@ hr {
 
 .copyright span {
     color: #CC2A2D;
+    }
+
+/*Адаптация писать каждый запрос под блоком для которого он идет */
+
+@media (max-width: 1230px) {
+    .intro__suptitle {
+        font-size: 52px;
+        }
+
+    .intro__title {
+        font-size: 120px;
+        }
+    }
+
+/*ноутбук */
+@media (max-width: 990px) {
+    .intro__suptitle {
+        font-size: 32px;
+        }
+
+    .intro__title {
+        font-size: 80px;
+        }
+
+    .stat {
+        justify-content: center;
+        }
+
+    .stat__item {
+        flex: none;
+        width: 33.3333%;
+        border: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+
+    .stat__item:last-child {
+        border-right: 0;
+        }
+
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+        }
+
+    .services__item--border {
+        border-bottom: 0;
+        }
+    }
+
+/*планшет */
+@media (max-width: 770px) {
+
+    .nav {
+        display: none;
+        }
+
+    .section {
+        padding: 40px 0;
+        }
+
+    .section--devices {
+        padding-bottom: 0;
+        }
+
+    .card {
+        margin-top: 50px;
+        justify-content: center;
+        }
+
+    .card__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+        }
+
+    .card__item:last-child {
+        margin-bottom: 0;
+        }
+
+    .slider__text {
+        display: none;
+        }
+
+    .slider__item.active:before {
+        width: 50%;
+        }
+
+    .services {
+        justify-content: center;
+        }
+
+    .services__item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+        }
+
+    .services__icon {
+        left: 0;
+        }
+
+    .wedo__img {
+        display: none;
+        }
+
+    .wedo__item {
+        width: 100%;
+        }
+    }
+
+/*мобила*/
+@media (max-width: 575px) {
+
+    .intro__suptitle {
+        font-size: 22px;
+        }
+
+    .intro__title {
+        font-size: 40px;
+        }
+
+    .section__header {
+        margin-bottom: 50px;
+        }
+
+    .section__suptitle {
+        font-size: 20px;
+        }
+
+    .section__title {
+        font-size: 24px;
+        }
+
+    .section__title:after {
+        margin: 20px auto;
+        }
+
+    .stat__item {
+        width: 100%;
+        border-bottom: 1px solid #FFF;
+        }
+
+    .stat__item:last-child {
+        border-bottom: 0;
+        }
+
+    .stat__count {
+        font-size: 52px;
+        }
+
+    .devices {
+        max-width: 320px;
+        }
+
+    .devices__item--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
+        }
     }
