@@ -38,6 +38,8 @@ hr {
     background: url("./images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    min-height: 820px;
+    position: relative;
     }
 
 .intro__inner { width: 100%;
@@ -71,6 +73,20 @@ hr {
     left: 0;
     right: 0;
     z-index: 1000;
+    }
+
+.header.fixed { /*создание фиксированной шапки при прокутке */
+    background-color: #E89056;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3); /*создает тень под шапкой */
+    }
+
+.header.active {
+    background-color: #E89056;
     }
 
 .header_inner { display: flex;
@@ -113,6 +129,69 @@ hr {
 
 .nav__link.active {
     color: yellow;
+    }
+
+.nav-toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+    width: 30px;
+    padding: 10px 0;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: none;
+    }
+
+.nav-toggle__item {
+    width: 100%;
+    height: 3px;
+    background-color: #FFF;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: background .2s linear;
+    }
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+    }
+
+.nav-toggle.active .nav-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+    }
+
+.nav-toggle.active .nav-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+    }
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: transform .2s linear;
+    }
+
+.nav-toggle__item:before {
+    top: -8px;
+    }
+
+.nav-toggle__item:after {
+    bottom: -8px;
     }
 
 .btn { display: inline-block;
@@ -1100,9 +1179,31 @@ hr {
 
 /*планшет */
 @media (max-width: 770px) {
+    .intro {
+        min-height: 650px;
+        }
+
+    .header {
+        padding: 10px 0;
+        }
 
     .nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #E89056;
+        width: 100%;
+        }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+        }
+
+    .nav-toggle {
+        display: block;
         }
 
     .section {
