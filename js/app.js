@@ -6,6 +6,9 @@ $(function () {
         introH = $("#intro").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
+
+    /*фиксация шапки*/
+
     checkScroll(scrollOffset);
 
     $(window).on("scroll", function () {
@@ -23,4 +26,13 @@ $(function () {
             header.removeClass("fixed");
         }
     }
+
+    /*плавный скролл*/
+
+    $("[data-scroll]").on("click", function (event) {
+        event.preventDefault();
+
+        var  blockId = $(this).data('scroll');
+    });
+
 });
