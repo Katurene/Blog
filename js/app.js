@@ -46,13 +46,24 @@ $(function () {
 
     /*бургер меню*/
 
-$("#nav_toggle").on("click", function (event) {
-    event.preventDefault();
+    $("#nav_toggle").on("click", function (event) {
+        event.preventDefault();
 
-    $(this).toggleClass("active");
-    $("#nav").toggleClass("active");
-});
+        $(this).toggleClass("active");
+        $("#nav").toggleClass("active");
+    });
 
+    /*аккордеон */
+
+    $("[data-collapse]").on("click", function (event) {
+        event.preventDefault();
+
+        var $this = $(this),
+            blockId = $this.data('collapse');
+
+        $this.toggleClass("active");
+        /*$(blockId).slideToggle(); будет плавно*/
+    })
 
 });
 

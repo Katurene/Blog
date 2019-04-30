@@ -147,9 +147,11 @@ hr {
     cursor: pointer;
     display: none;
     }
-.nav-toggle:focus{
+
+.nav-toggle:focus {
     outline: 0;
     }
+
 .nav-toggle__item {
     width: 100%;
     height: 3px;
@@ -1200,7 +1202,7 @@ hr {
         width: 100%;
         }
 
-    .nav.active{
+    .nav.active {
         display: block; /*позволяет выводить менюшку в моб версии*/
         }
 
