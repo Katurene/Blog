@@ -63,7 +63,15 @@ $(function () {
 
         $this.toggleClass("active");
         /*$(blockId).slideToggle(); будет плавно*/
-    })
+    });
 
+    /*slider*/
+
+    $("[data-slider]").slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });
 
